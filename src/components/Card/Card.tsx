@@ -3,13 +3,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { CUSTOM_ELEMENT } from 'utils/constants/testIds';
 
 interface CardProps {
     title: string;
     description: React.ReactNode;
 }
 
-export const Card = ({
+const Card = ({
     title,
     description
 }: CardProps) => {
@@ -17,6 +18,7 @@ export const Card = ({
     <MUICard sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
+          data-testid={CUSTOM_ELEMENT}
           component="img"
           height="140"
           image="/images/sunny-weather.png"
@@ -34,3 +36,5 @@ export const Card = ({
     </MUICard>
   );
 }
+
+export default Card;

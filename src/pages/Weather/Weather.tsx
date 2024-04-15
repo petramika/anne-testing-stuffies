@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { getWeatherData } from '../../utils/api/weather'
+import { getWeatherData } from 'utils/api'
 import { Box, Divider, TextField, Typography } from '@mui/material';
-import { Search } from '../../models/search';
-import { Card } from '../../components/Card';
+import { Search } from 'models/Search';
+import { Card } from 'components';
 import _ from 'lodash';
 import { VariantTypography } from '../../utils/constants';
 
@@ -45,7 +45,7 @@ const Weather = () => {
             <>
             {_.map(searchWeather, ({name, country}) => (
                 <Box key={name}>
-                   <Typography variant={VariantTypography.body1}>{name}</Typography>
+                  <Typography variant={VariantTypography.body1}>{name}</Typography>
                   <Divider />
                   <Typography variant={VariantTypography.body1}>{country}</Typography>
                 </Box>

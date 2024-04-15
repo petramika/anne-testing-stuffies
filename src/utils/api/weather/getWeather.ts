@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Search } from "../../../models/search";
+import { Search } from "models/Search";
 
 export const getWeatherData = (postcode: string): Promise<Search[]> => (
    axios.get(`
