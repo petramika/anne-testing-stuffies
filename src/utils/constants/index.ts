@@ -1,5 +1,5 @@
-import { VariantTypography } from "./mui";
+import { VariantTypography } from './mui';
 
 export {
-    VariantTypography
-}
+  VariantTypography,
+};

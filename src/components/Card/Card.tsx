@@ -1,8 +1,7 @@
-import { Box, Card as MUICard } from '@mui/material';
+import { Box, Card as MUICard, CardActionArea } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import { CUSTOM_ELEMENT } from 'utils/constants/testIds';
 
 interface CardProps {
@@ -11,8 +10,8 @@ interface CardProps {
 }
 
 const Card = ({
-    title,
-    description
+  title,
+  description,
 }: CardProps) => {
   return (
     <MUICard sx={{ maxWidth: 345 }}>
@@ -25,7 +24,10 @@ const Card = ({
           alt="sunny weather"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom
+            variant="h5"
+            component="div"
+          >
             {title}
           </Typography>
           <Box>
@@ -35,6 +37,6 @@ const Card = ({
       </CardActionArea>
     </MUICard>
   );
-}
+};
 
 export default Card;

@@ -1,5 +1,5 @@
-import { useGeolocation } from "./useGeolocation";
+import { useGeolocation } from './useGeolocation';
 
 export {
-    useGeolocation
-}
+  useGeolocation,
+};

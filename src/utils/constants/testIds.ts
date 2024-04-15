@@ -1,1 +1,1 @@
-export const CUSTOM_ELEMENT = 'custom-element'
+export const CUSTOM_ELEMENT = 'custom-element';

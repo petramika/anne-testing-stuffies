@@ -1,5 +1,5 @@
-import { getWeatherData } from "./weather/getWeather";
+import { getWeatherData } from './weather/getWeather';
 
 export {
-    getWeatherData
+  getWeatherData,
 };

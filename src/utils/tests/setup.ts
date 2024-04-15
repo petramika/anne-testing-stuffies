@@ -1,8 +1,8 @@
-import { expect, afterEach, vi } from 'vitest';
+import * as matchers from '@testing-library/jest-dom/matchers';
 import { cleanup } from '@testing-library/react';
-import * as matchers from "@testing-library/jest-dom/matchers";
+import { afterEach, expect, vi } from 'vitest';
 
-vi.mock('utils/api')
+vi.mock('utils/api');
 
 expect.extend(matchers);
 

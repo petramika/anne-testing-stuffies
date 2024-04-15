@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-refresh", "react", "simple-import-sort"],
+  "rules": {
+    "max-len": [2, 120, {
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreComments": true
+    }],
+    "camelcase": 1,
+		"comma-spacing": 2,
+		"key-spacing": 2,
+		"keyword-spacing": 2,
+		"space-before-blocks": 2,
+		"space-infix-ops": 2,
+    "prefer-const": 2,
+    "quotes": [2,"single"],
+    "semi": [2,"always"],
+    "default-case": 2,
+		"default-case-last": 2,
+    "consistent-return": 0,
+    "indent": ["error", 2],
+    "comma-dangle": [2, "always-multiline"],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "react/jsx-max-props-per-line": [2, { "maximum": 1 }],
+    "react/jsx-closing-bracket-location": 2,
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "no-duplicate-imports": "error"
+  }
+}
