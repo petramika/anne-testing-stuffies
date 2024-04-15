@@ -11,14 +11,12 @@ describe("Card unit tests", () => {
     const randomTitle = faker.lorem.words(5);
     const randomDescription = faker.lorem.paragraph();
   
+    // ACT
     render(<Card 
           title={randomTitle} 
           description={randomDescription}
           />
       )
-  
-      // ACT
-      // no actions required
   
       // ASSERT
       expect(screen.getByTestId(CUSTOM_ELEMENT)).toBeDefined()
