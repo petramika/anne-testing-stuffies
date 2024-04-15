@@ -19,4 +19,4 @@ Ideas...
 - i18next
 - Virtualization
 - Animations
-- [React Query and TanStack suff 😎](https://tanstack.com/)
+- [React Query and TansStack suff 😎](https://tanstack.com/)
