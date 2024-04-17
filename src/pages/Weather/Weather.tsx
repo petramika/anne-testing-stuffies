@@ -24,9 +24,10 @@ const Weather = () => {
   };
 
   return (
-    <>
+    <Box sx={{px: 3}}>
       <Typography variant={VariantTypography.h1}>Vite + React</Typography>
-      <Typography variant={VariantTypography.h2}>Anne&aposs testing stuffs</Typography>
+      <Typography variant={VariantTypography.h2}>Anne&apos;s testing stuffs</Typography>
+      <Divider />
       <Box>
         <Typography variant={VariantTypography.body1}>
         Introduce the Zip Code to get the city!
@@ -38,6 +39,7 @@ const Weather = () => {
           onChange={(event) => onChangeSearch(event.target.value)}
         />
       </Box> 
+      <Divider />
       <Box>
         { searchWeather &&  
           searchWeather.length > 0 &&
@@ -73,7 +75,13 @@ const Weather = () => {
           />
         </Suspense>
       </Box>
-    </>
+      <Box>
+        Test Rendering!
+        <Box>{[1, 2, 3].reduce((partialSum, a) => partialSum + a, 0)}</Box>
+      </Box>
+      <Divider />
+    </Box>
+    
   );
 };
 
