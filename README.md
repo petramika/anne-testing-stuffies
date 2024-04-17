@@ -1,4 +1,4 @@
-# Anne's testing stuffies
+# Anne's vite testing stuffies
 
 This skeleton is used for me to test different tools, to see what can I do with them.
 
@@ -14,6 +14,7 @@ For the moment:
 - Vitest with unit and integration tests
 
 Ideas...
+
  - Adding a store
 - Eject components into components lib, all in monorepo 🧠
 - i18next
